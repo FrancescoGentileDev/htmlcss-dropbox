@@ -1,99 +1,100 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;    
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 /*#region UTILITIES */
 .col {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .row {
-display: flex;
+  display: flex;
 }
 
 .row-reverse {
- display: flex;
-flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .wrap {
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .grow {
   flex-grow: 1;
 }
 
 .max-width {
-    width: 100%;
+  width: 100%;
 }
 
 .white {
- color: #fff;
+  color: #fff;
 }
 .black {
- background-color: #23272a !important;
- color: white !important;
+  background-color: #23272a !important;
+  color: white !important;
 }
 .fontlarge {
   color: #23272a;
- font-size: 28px;
+  font-size: 28px;
 }
 .align-center {
   align-items: center;
 }
 
 .flex-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .flex-center {
- justify-content: center;
+  justify-content: center;
 }
 .flex-end {
   justify-content: flex-end;
 }
 .flex-around {
-justify-content: space-around;
+  justify-content: space-around;
 }
 .flex-between {
-justify-content: space-between;
+  justify-content: space-between;
 }
 .container {
-max-width: 1080px;
-margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 100px
 }
 .red {
-background-color: red;
-color: white;
+  background-color: red;
+  color: white;
 }
 .green {
-color: green;
+  color: green;
 }
 
-
-.margin-5 > *{
-    margin: 5px
+.margin-5 > * {
+  margin: 5px;
 }
 .margin-10 > * {
-    margin: 10px
+  margin: 10px;
 }
 .margin-15 > * {
-    margin: 15px
+  margin: 15px;
 }
-.margin-right-5  > *{
-    margin-right: 5px
+.margin-right-5 > * {
+  margin-right: 5px;
 }
 .margin-right-10 > * {
-    margin-right: 10px
+  margin-right: 10px;
 }
 .margin-right-15 > * {
-    margin-right: 15px
+  margin-right: 15px;
 }
 /*#endregion UTILITIES */

@@ -3,6 +3,8 @@
     --blue-button-color: #0061ff;
     --background-jumbo-color: #B4D0E7;
 }
+
+
 /*#region Header*****/
 
 header {
@@ -50,9 +52,6 @@ header a:last-child {
     flex-grow: 1;
  }
 
-
-
-
 #radio {
     margin-top: 50px;
 }
@@ -85,10 +84,27 @@ header a:last-child {
 
 /*#region partner card*****/
 #partner {
+    margin-top: 20px;
     column-gap: 4rem;
+    
 }
 #partner > div:last-child {
     padding-right: 50px;
 }
 
 /*#endregion partner card*****/
+
+
+/*#region Floating cards*****/
+#floatingCards .card {
+    width: calc(100%/3 - 4rem);
+    justify-items: center;
+}
+#floatingCards > div.row {
+    column-gap: 4rem;
+}
+
+#floatingCards .card > .card-text  {
+    margin-left: 1rem
+}
+/*#endregion Floating cards*****/
