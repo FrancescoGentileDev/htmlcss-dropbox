@@ -1,0 +1,21 @@
+/*#region Header*****/
+header {
+    background-color: rgb(255, 0, 0);
+    height: 50px;
+    padding: 30px 10px;
+}
+
+header > div > div *:not(a) {
+    margin: 1rem;
+}
+
+
+
+header a {
+    margin: 0.5rem;
+}
+
+
+
+
+/*#endregion Header*****/
