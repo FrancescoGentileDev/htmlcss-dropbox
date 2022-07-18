@@ -33,8 +33,9 @@
     <div class="col jumbo"></div>
     <!--#endregion JUMBOTRON-->
 
-    <main>
-      <div id="pricing" class="col container">
+    <main class="container col">
+      <!--#region pricing-->
+      <section id="pricing" class="col">
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
 
         <div id="radio" class="row flex-start">
@@ -44,7 +45,36 @@
           <label for="radio2">Billed yearly</label>
         </div>
 
+        <!--#region Columns-->
+        <div class="col colWrapper flex-center">
+          <div class="row flex-grow">
+            <div class="col">k</div>
+            <div class="col">k</div>
+            <div class="col">k</div>
+          </div>
+
+          <div class="col">j</div>
+        </div>
+        <!--#endregion Columns-->
+      </section>
+      <!--#endregion pricing-->
+
+      <!--#region partner card-->
+	  <section id="partnerCard">
+      <div class="col flex-start" >
+        <div class="row"id="partner">
+		  <div class="col">
+          <img src="img/partner.png" class="max-width" alt="" />
+		  </div>
+
+		  <div class="col flex-center">
+			<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem, quisquam. Quisquam, quidem, quisquam.</p>
+		  </div>
+        </div>
       </div>
+	</section>
+      <!--#endregion partner card-->
     </main>
   </body>
 </html>

@@ -29,6 +29,11 @@ flex-wrap: wrap;
 .grow {
   flex-grow: 1;
 }
+
+.max-width {
+    width: 100%;
+}
+
 .white {
  color: #fff;
 }
