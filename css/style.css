@@ -1,21 +1,42 @@
+
+:root {
+    --blue-button-color: #0061ff;
+    --background-jumbo-color: #B4D0E7;
+}
 /*#region Header*****/
+
 header {
-    background-color: rgb(255, 0, 0);
-    height: 50px;
-    padding: 30px 10px;
+    background-color: #fff;
+    height: 60px;
+    padding: 0px 10px;
+    font-size: 0.9rem;
 }
 
 header > div > div *:not(a) {
     margin: 1rem;
 }
 
+header img {
+    width: 100px
+}
 
 
 header a {
     margin: 0.5rem;
 }
 
-
-
-
+header a:last-child {
+    background-color: var(--blue-button-color);
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
 /*#endregion Header*****/
+
+
+/*#region jumbotron*****/
+.jumbo {
+    background-color: var(--background-jumbo-color);
+    height: calc(99vh - 60px);
+}
+
+/*#endregion jumbotron*****/

@@ -43,6 +43,11 @@ flex-wrap: wrap;
 .align-center {
   align-items: center;
 }
+
+.flex-start {
+    justify-content: flex-start;
+}
+
 .flex-center {
  justify-content: center;
 }
@@ -68,22 +73,22 @@ color: green;
 }
 
 
-.margin-5 {
+.margin-5 > *{
     margin: 5px
 }
-.margin-10 {
+.margin-10 > * {
     margin: 10px
 }
-.margin-15 {
+.margin-15 > * {
     margin: 15px
 }
-.margin-right-5 {
+.margin-right-5  > *{
     margin-right: 5px
 }
-.margin-right-10 {
+.margin-right-10 > * {
     margin-right: 10px
 }
-.margin-right-15 {
+.margin-right-15 > * {
     margin-right: 15px
 }
 /*#endregion UTILITIES */
