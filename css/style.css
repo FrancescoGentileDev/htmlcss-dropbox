@@ -159,6 +159,13 @@ header a:last-child {
 
 /*#region bigtext2*****/
 #bigtext2 {
-    padding : 0px 80px;
+    padding : 80px 0px;
+
+}
+#bigtext2 > div {
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content : space-around;
+    
 }
 /*#endregion bigtext2*****/
