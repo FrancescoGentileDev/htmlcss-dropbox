@@ -6,10 +6,6 @@
   text-decoration: none;
 }
 
-a {
-  color: inherit;
-}
-
 /*#region UTILITIES */
 .col {
   display: flex;
