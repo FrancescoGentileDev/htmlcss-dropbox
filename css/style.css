@@ -176,7 +176,6 @@ main {
 }
 #pricing .colWrapper > div.col {
   margin-top: 1rem;
-  height: 20vh;
 }
 
 
@@ -210,12 +209,11 @@ main {
 }
 
 #pricing .modality-button {
-  margin: 5rem 0;
+  margin: 5rem 0px;
 }
 #pricing .modality-button .button-blue{
+  padding: 15px 25px;
   text-align: center;
-  width: 100%;
-  padding: 15px 0;
 }
 
 #pricing .checked::before {
@@ -226,11 +224,20 @@ main {
   margin-right: 0.5rem;
 }
 
+#pricing .checked::after {
+  clear: both;
+}
 
+#pricing .modality-main.long h3{
+  margin-top: 0 !important;
+}
+#pricing .modality-main.long .button-blue {
+  margin-top: 0 !important;
+}
 
-
-
-
+#pricing .modality-main.long .modality-footer{
+  margin-top: 4rem;
+} 
 
 /*#endregion modality*****/
 
