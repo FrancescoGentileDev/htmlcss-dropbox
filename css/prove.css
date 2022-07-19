@@ -1,0 +1,58 @@
+/*#region faq*****/
+
+#faq details {
+    border-top: 1px solid black;
+    padding: 3rem;
+    line-height: 1.2rem;
+    transition: height 0.5s ease;
+    overflow: hidden;
+  }
+  
+  #faq details[open] {
+    height: 4.25em;
+  }
+  
+  #faq details:not([open]) {
+    height: 1.15em;
+  }
+  
+  
+  #faq summary {
+    list-style: none;
+    position: relative;
+  }
+  
+  #faq summary {
+    cursor: pointer;
+  }
+  
+  /*#region MARKER ROTATION*****/
+  #faq summary::after {
+    content: "▶";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+  }
+  #faq details[open] summary:after {
+    transform: rotate(90deg);
+    animation-name: faq-details;
+    animation-play-state: running;
+  }
+  
+  /*#endregion MARKER ROTATION*****/
+  
+  
+  #faq details p {
+    margin-top: 1rem;
+  }
+  
+  #faq h2 {
+    margin-bottom: 70px;
+  }
+  
+  #faq:last-child {
+    border-bottom: 1px solid black;
+  }
+  
+  /*#endregion faq*****/

@@ -1,18 +1,16 @@
-
-
 /*#region general*****/
 :root {
   --blue-button-color: #0061ff;
   --background-jumbo-color: #b4d0e7;
 }
 a {
-    color: inherit;
-  }
+  color: inherit;
+}
 
-    a:hover {
-       text-decoration: underline;
-       text-underline-offset: 0.2rem;
-    }
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
 /*#endregion general*****/
 
 /*#region Header*****/
@@ -20,8 +18,10 @@ a {
 header {
   background-color: #fff;
   height: 60px;
+  width: 100vw;
   padding: 0px 10px;
   font-size: 0.9rem;
+  position: fixed;
 }
 
 header > div > div *:not(a) {
@@ -42,6 +42,9 @@ header a:last-child {
   color: #fff;
 }
 /*#endregion Header*****/
+
+/*#region main*****/
+/*#endregion main*****/
 
 /*#region jumbotron*****/
 .jumbo {
@@ -122,6 +125,10 @@ header a:last-child {
   height: calc(100vw / 6);
   background-color: #61082b;
 }
+#review .marked {
+  background-color: brown;
+  height: calc((100vw / 6) * 2);
+}
 /*#region color company*****/
 .green {
   background-color: #a2d39b;
@@ -154,103 +161,116 @@ header a:last-child {
 }
 /*#endregion color company*****/
 
-#review > div >div {
-    width: calc(100% / 3 )
+#review > div > div {
+  width: calc(100% / 3);
 }
 
-#review .left-company > div > *, #review .right-company > div > * {
-    width: calc(100% / 2)
-    
+#review .left-company > div > *,
+#review .right-company > div > * {
+  width: calc(100% / 2);
 }
 
-#review .marked {
-   background-color: brown;
-   height: calc((100vw / 6)* 2 )
-}
 /*#endregion review*****/
 
 /*#region bigtext2*****/
 #bigtext2 {
-    padding : 80px 0px;
-
+  padding: 80px 0px;
 }
 #bigtext2 > div {
-    max-width: 1080px;
-    margin: 0 auto;
-    justify-content : space-around;
-    
+  max-width: 1080px;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 /*#endregion bigtext2*****/
 
 /*#region faq*****/
 
 #faq details {
-    border-top: 1px solid black;
-    padding: 3rem;
-    line-height: 1.2rem;
-} 
-
-#faq summary{
-    list-style: none;
-    position: relative;
+  border-top: 1px solid black;
+  padding: 3rem;
+  line-height: 1.2rem;
+  transition: height 0.4s linear;
+  overflow: hidden;
 }
+
+#faq details[open] {
+  height: 300px;
+}
+
+#faq details:not([open]) {
+  height: 10px;
+}
+
+
+#faq summary {
+  list-style: none;
+  position: relative;
+}
+
+#faq summary {
+  cursor: pointer;
+}
+
+/*#region MARKER ROTATION*****/
 #faq summary::after {
-    content : "▶";
-    position: absolute;
-    right: 0;
-    top: 0;
+  content: "▶";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+  transition: transform 500ms ease;
 }
 #faq details[open] summary:after {
-    content: "▼"
-
+  transform: rotate(90deg);
 }
+
+/*#endregion MARKER ROTATION*****/
+
+
+#faq details p {
+  margin-top: 1rem;
+}
+
 #faq h2 {
-    margin-bottom: 70px
+  margin-bottom: 70px;
 }
 
 #faq:last-child {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-
-/*#endregion faq*****/ 
+/*#endregion faq*****/
 
 /*#region footer*****/
 footer {
-    height: 80vh;
-    background-color: rgb(14, 14, 14);
-    color: white;
-    margin-top: 110px
+  height: 80vh;
+  background-color: rgb(14, 14, 14);
+  color: white;
+  margin-top: 110px;
 }
 
-footer a {
-    
-}
-
-footer >  div { 
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding-top: 70px;
-
+footer > div {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 70px;
 }
 
 footer li {
-    list-style: none;
-    margin: 0.8rem;
-    font-size: 0.8rem;
+  list-style: none;
+  margin: 0.8rem;
+  font-size: 0.8rem;
 }
 
 footer ul li:first-child {
-    font-size: 1.1rem;
-    font-weight: 800;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 15px;
 }
 
 footer hr {
-    max-width: 10%;
-    margin-bottom: 50px;
-
+  max-width: 10%;
+  margin-bottom: 50px;
 }
 /*#endregion footer*****/
