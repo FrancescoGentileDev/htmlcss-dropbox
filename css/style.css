@@ -1,6 +1,6 @@
 /*#region general*****/
 :root {
-  --blue-button-color: #0061ff;
+  --blue-button-color: rgba(0, 98, 255, 0.7);
   --background-jumbo-color: #b4d0e7;
 }
 a {
@@ -11,6 +11,16 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
+
+.button-blue {
+  background-color: var(--blue-button-color);
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+.button-blue:hover {
+  background-color: rgba(0, 98, 255, 1);
+  text-decoration: none;
+}
 /*#endregion general*****/
 
 /*#region Header*****/
@@ -19,9 +29,10 @@ header {
   background-color: #fff;
   height: 60px;
   width: 100vw;
-  padding: 0px 10px;
+  padding: 0px 30px;
   font-size: 0.9rem;
   position: fixed;
+  z-index: 1;
 }
 
 header > div > div *:not(a) {
@@ -33,25 +44,83 @@ header img {
 }
 
 header a {
+  display: block;
+  
   margin: 0.5rem;
 }
+header a:not(.button-blue) {
+  line-height: 60px;
+}
 
-header a:last-child {
-  background-color: var(--blue-button-color);
-  padding: 0.5rem 1rem;
-  color: #fff;
+header a:hover:not(.button-blue) {
+  text-decoration: none;
+  margin-top: 10px;
+  border-bottom: 2px solid black;
 }
 /*#endregion Header*****/
 
 /*#region main*****/
+main {
+  padding-top: 60px;
+}
 /*#endregion main*****/
 
 /*#region jumbotron*****/
-.jumbo {
+#jumbo {
   background-color: var(--background-jumbo-color);
-  height: calc(99vh - 60px);
+}
+#jumbo > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+  padding-top: 100px
 }
 
+#jumbo .subtitles {
+  width: 30%;
+}
+
+#jumbo-image {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  right: 0;
+  top: 50px;
+}
+#jumbo-image > img {
+  width: 100%;
+}
+#jumbo .button-blue {
+  align-self: flex-start;
+}
+
+#jumbo h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+#jumbo > .col > .row {
+  margin-top: 10px;
+}
+
+
+#jumbo .subtitles > *:not(.freccia) {
+  margin-top: 2rem;
+}
+#jumbo .subtitles {
+  margin-top: 25px;
+}
+
+#jumbo .freccia {
+  padding-top: 20px;
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.7);
+  width: 2rem;
+}
+#jumbo .freccia:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
 /*#endregion jumbotron*****/
 
 /*#region pricing*****/
@@ -60,7 +129,11 @@ header a:last-child {
   height: 150vh;
   flex-grow: 1;
 }
-
+#pricing h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
 #radio {
   margin-top: 50px;
 }
@@ -194,13 +267,12 @@ header a:last-child {
 }
 
 #faq details[open] {
-  height: 300px;
+  height: 250px;
 }
 
 #faq details:not([open]) {
   height: 10px;
 }
-
 
 #faq summary {
   list-style: none;
@@ -225,7 +297,6 @@ header a:last-child {
 }
 
 /*#endregion MARKER ROTATION*****/
-
 
 #faq details p {
   margin-top: 1rem;
@@ -274,3 +345,8 @@ footer hr {
   margin-bottom: 50px;
 }
 /*#endregion footer*****/
+
+
+html, body{
+  scroll-behavior: smooth !important;
+}

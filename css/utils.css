@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
   text-decoration: none;
+  scroll-behavior: smooth !important;
 }
 
 /*#region UTILITIES */
@@ -60,6 +61,9 @@
 }
 .flex-between {
   justify-content: space-between;
+}
+.flex-evenly {
+  justify-content: space-evenly;
 }
 .container {
   width: 100%;
