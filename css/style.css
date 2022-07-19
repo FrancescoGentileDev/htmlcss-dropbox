@@ -75,7 +75,6 @@ header a:hover:not(.button-generic) {
 
 /*#region main*****/
 main {
-  padding-top: 60px;
 }
 /*#endregion main*****/
 
@@ -200,7 +199,7 @@ main {
 }
 
 #pricing .modality-main {
-  padding: 30px
+  padding: 30px;;
 }
 
 #pricing .modality-main > div:not(.modality-price) > * {
@@ -218,6 +217,7 @@ main {
 }
 
 #pricing .modality-function {
+  font-size: 1rem;
   margin-top: 2rem;
 }
 
@@ -268,9 +268,13 @@ main {
 /*#endregion partner card*****/
 
 /*#region Floating cards*****/
+#floatingCards h1 {
+  font-size: 2.5rem;
+}
 #floatingCards .card {
   width: calc(100% / 3 - 2rem);
   justify-items: center;
+  margin-top: 2rem;
 }
 #floatingCards img {
   width: 100%;
@@ -278,6 +282,9 @@ main {
 /*#endregion Floating cards*****/
 
 /*#region BigText1*****/
+#bigtext1 h2 {
+  font-size: 2.5rem;
+}
 .bigtext > a {
   text-decoration: underline;
   color: var(--blue-button-color);
@@ -370,6 +377,10 @@ main {
 /*#region bigtext2*****/
 #bigtext2 {
   padding: 80px 0px;
+  color: purple;
+}
+#bigtext2 h2 {
+  font-size: 3rem;
 }
 #bigtext2 > div {
   max-width: 1080px;
@@ -403,6 +414,7 @@ main {
 
 #faq summary {
   cursor: pointer;
+  font-weight: bold;
 }
 
 /*#region MARKER ROTATION*****/
@@ -459,7 +471,7 @@ footer li {
 footer ul li:first-child {
   font-size: 1.1rem;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 footer hr {
