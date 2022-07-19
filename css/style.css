@@ -2,6 +2,7 @@
 :root {
   --blue-button-color: rgba(0, 98, 255, 0.7);
   --background-jumbo-color: #b4d0e7;
+  --border-for-modality: rgba(0, 0, 0, 0.24);
 }
 a {
   color: inherit;
@@ -126,41 +127,115 @@ main {
 /*#region pricing*****/
 
 #pricing {
-  height: 150vh;
   flex-grow: 1;
 }
 #pricing h2 {
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
+
+/*#region Radio*****/
 #radio {
   margin-top: 50px;
+  font-size: 1.2rem;
+}
+#radio2 {
+  margin-left: 1rem;
+}
+
+#radio input[type="radio"] {
+  accent-color: var(--blue-button-color);
+  width: 1.5rem;
+  height: auto;
 }
 
 #radio label {
   margin-right: 2rem;
+  margin-left: 5px;
 }
-.colWrapper {
+/*#endregion Radio*****/
+
+/*#region modality*****/
+#pricing  .colWrapper {
   padding-top: 2rem;
 }
 
-.colWrapper > div {
+#pricing .colWrapper > div {
   column-gap: 1rem;
 }
 
-.colWrapper > div > div,
-.colWrapper > div.col {
-  background-color: red;
+#pricing .colWrapper > div > div,
+#pricing .colWrapper > div.col {
   width: 100%;
 }
-.colWrapper > div > div {
-  height: 100vh;
+#pricing .modality {
+  /* height: 100vh; */
+  padding: 10px 0px;
+  border: 1px solid var(--border-for-modality);
 }
-.colWrapper > div.col {
+#pricing .colWrapper > div.col {
   margin-top: 1rem;
   height: 20vh;
 }
+
+
+#pricing .modality-header {
+  width: 100%;
+  border-bottom: 1px solid var(--border-for-modality);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#pricing .modality-main {
+  padding: 30px
+}
+
+#pricing .modality-main > div:not(.modality-price) > * {
+  margin-top: 1rem;
+}
+
+
+
+#pricing .modality-price> :first-child {
+  margin-top: 1rem
+}
+#pricing .modality-price >:last-child {
+  color: rgba(0, 0, 0, 0.56);
+  margin-top: 0.5rem
+}
+
+#pricing .modality-function {
+  margin-top: 2rem;
+}
+
+#pricing .modality-button {
+  margin: 5rem 0;
+}
+#pricing .modality-button .button-blue{
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+#pricing .checked::before {
+  content: "✔";
+  float: left;
+  color: var(--blue-button-color);
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+/*#endregion modality*****/
+
+
+
 /*#endregion pricing*****/
 
 /*#region partner card*****/

@@ -8,6 +8,10 @@
 }
 
 /*#region UTILITIES */
+.clearfix {
+  clear: both;
+}
+
 .col {
   display: flex;
   flex-direction: column;
