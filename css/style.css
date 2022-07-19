@@ -105,7 +105,7 @@ header a:hover:not(.button-generic) {
   max-width: 800px;
   position: relative;
   right: 0;
-  top: 50px;
+  top: 80px;
 }
 #jumbo-image > img {
   width: 100%;
@@ -131,6 +131,7 @@ header a:hover:not(.button-generic) {
 }
 
 #jumbo .freccia {
+  margin-top: 70px;
   padding-top: 20px;
   font-size: 4rem;
   color: rgba(0, 0, 0, 0.7);
@@ -457,7 +458,6 @@ header a:hover:not(.button-generic) {
 
 /*#region footer*****/
 footer {
-  height: 80vh;
   background-color: rgb(14, 14, 14);
   color: white;
   margin-top: 110px;
@@ -487,6 +487,10 @@ footer hr {
   max-width: 10%;
   margin-bottom: 50px;
 }
+
+footer > :last-child {
+  padding-bottom: 30px
+}
 /*#endregion footer*****/
 
 html,
@@ -512,6 +516,16 @@ body {
     justify-content: space-between !important;
   }
 
+  #jumbo h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  #jumbo p{
+    text-align: center;
+  }
+
+
   #jumbo-image {
     display: none;
   }
@@ -528,13 +542,19 @@ body {
   #jumbo .freccia {
     display: none;
   }
-
+  #jumbo .button-generic {
+    align-self: center;
+  }
   .colWrapper > div {
     flex-wrap: wrap;
   }
 
   .modality.col {
     margin-top: 2rem;
+  }
+
+  #pricing h2 {
+    font-size: 1.7rem;
   }
 
   #partner {
@@ -562,6 +582,37 @@ body {
     width: 100%;
     text-align: center;
   }
+
+  #floatingCards h1
+  {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #bigtext1 h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #bigtext1 a {
+    text-align: center;
+  }
+  #bigtext2  {
+    padding: 80px 20px;
+  }
+  #bigtext2 h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #faq h2 {
+    text-align: center;
+  }
+  #faq details[open] {
+    height: 360px;
+  }
+  #faq details:not([open]) {
+    height: 10rem;
+  }
+
   #review .marked {
     display: none
   }
@@ -569,6 +620,8 @@ body {
     width: 100% !important;
     height: 100% !important;
   }
+
+
   .company {
     height: calc(100vw / 2) !important;
   }
