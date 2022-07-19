@@ -23,6 +23,18 @@ a:hover {
   background-color: rgba(0, 98, 255, 1);
   text-decoration: none;
 }
+ .button-generic.border {
+  max-width: 60%;
+  text-align: center;
+  background-color: rgb(0,0,0,0);
+  color: rgb(0,0,0);
+  border : 1px solid black
+
+}
+ .button-generic.border:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
 /*#endregion general*****/
 
 /*#region Header*****/
@@ -251,15 +263,6 @@ main {
   margin-top: 150px;
   column-gap: 3rem;
 }
-#partner .button-generic {
-  max-width: 50%;
-  text-align: center;
-  margin-top: 2rem;
-  background-color: rgb(0,0,0,0);
-  color: rgb(0,0,0);
-  border : 1px solid black
-
-}
 
 
 /*#endregion partner card*****/
@@ -276,6 +279,8 @@ main {
 
 /*#region BigText1*****/
 .bigtext > a {
+  text-decoration: underline;
+  color: var(--blue-button-color);
   margin-top: 2rem;
 }
 /*#endregion BigText1*****/
@@ -292,9 +297,26 @@ main {
   background-color: #61082b;
 }
 #review .marked {
-  background-color: brown;
+  background-color: #f5f5f5;
   height: calc((100vw / 6) * 2);
+  padding: 0.5rem 2rem;
 }
+
+#review .marked svg {
+  width: 50%;
+
+}
+
+#review .marked hr {
+  max-width: 30%;
+}
+
+#review .marked p {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+
 /*#region color company*****/
 .green {
   background-color: #a2d39b;
@@ -328,14 +350,21 @@ main {
 /*#endregion color company*****/
 
 #review > div > div {
-  width: calc(100% / 3);
+  width: calc(100% / 3);  
 }
+
 
 #review .left-company > div > *,
 #review .right-company > div > * {
   width: calc(100% / 2);
-}
+  padding: 60px;
 
+}
+#review .left-company > div > *:hover,
+#review .right-company > div > *:hover {
+  outline: 15px solid rgb(255, 255, 255, 0.5);
+  outline-offset: -15px;
+} 
 /*#endregion review*****/
 
 /*#region bigtext2*****/
