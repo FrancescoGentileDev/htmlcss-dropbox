@@ -13,12 +13,13 @@ a:hover {
   text-underline-offset: 0.2rem;
 }
 
-.button-blue {
+.button-generic {
   background-color: var(--blue-button-color);
   padding: 0.5rem 1rem;
+  line-height: 1rem;
   color: #fff;
 }
-.button-blue:hover {
+.button-generic:hover {
   background-color: rgba(0, 98, 255, 1);
   text-decoration: none;
 }
@@ -49,11 +50,11 @@ header a {
   
   margin: 0.5rem;
 }
-header a:not(.button-blue) {
+header a:not(.button-generic) {
   line-height: 60px;
 }
 
-header a:hover:not(.button-blue) {
+header a:hover:not(.button-generic) {
   text-decoration: none;
   margin-top: 10px;
   border-bottom: 2px solid black;
@@ -91,7 +92,7 @@ main {
 #jumbo-image > img {
   width: 100%;
 }
-#jumbo .button-blue {
+#jumbo .button-generic {
   align-self: flex-start;
 }
 
@@ -211,7 +212,7 @@ main {
 #pricing .modality-button {
   margin: 5rem 0px;
 }
-#pricing .modality-button .button-blue{
+#pricing .modality-button .button-generic{
   padding: 15px 25px;
   text-align: center;
 }
@@ -231,7 +232,7 @@ main {
 #pricing .modality-main.long h3{
   margin-top: 0 !important;
 }
-#pricing .modality-main.long .button-blue {
+#pricing .modality-main.long .button-generic {
   margin-top: 0 !important;
 }
 
@@ -247,12 +248,19 @@ main {
 
 /*#region partner card*****/
 #partner {
-  margin-top: 20px;
-  column-gap: 4rem;
+  margin-top: 150px;
+  column-gap: 3rem;
 }
-#partner > div:last-child {
-  padding-right: 50px;
+#partner .button-generic {
+  max-width: 50%;
+  text-align: center;
+  margin-top: 2rem;
+  background-color: rgb(0,0,0,0);
+  color: rgb(0,0,0);
+  border : 1px solid black
+
 }
+
 
 /*#endregion partner card*****/
 
@@ -260,6 +268,9 @@ main {
 #floatingCards .card {
   width: calc(100% / 3 - 2rem);
   justify-items: center;
+}
+#floatingCards img {
+  width: 100%;
 }
 /*#endregion Floating cards*****/
 
