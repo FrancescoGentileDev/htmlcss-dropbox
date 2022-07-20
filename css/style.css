@@ -345,7 +345,7 @@ header a:hover:not(.button-generic) {
 }
 
 #review .marked p {
-  font-size: 0.9rem;
+  font-size: clamp(0.5rem, 1vw, 1rem);
   font-weight: lighter;
 }
 
@@ -388,7 +388,7 @@ header a:hover:not(.button-generic) {
 #review .left-company > div > *,
 #review .right-company > div > * {
   width: calc(100% / 2);
-  padding: 60px;
+  padding: 10%;
 }
 #review .left-company > div > *:hover,
 #review .right-company > div > *:hover {
@@ -511,7 +511,7 @@ body {
   scroll-behavior: smooth !important;
 }
 
-@media (max-width: 917px) {
+@media (max-width: 780px) {
   .container {
     max-width: 80% !important;
   }
