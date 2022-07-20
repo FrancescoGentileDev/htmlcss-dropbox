@@ -389,11 +389,14 @@ header a:hover:not(.button-generic) {
 #review .right-company > div > * {
   width: calc(100% / 2);
   padding: 10%;
+  outline-offset: -15px;
+  transition: outline 0.5s ease-in-out;
 }
 #review .left-company > div > *:hover,
 #review .right-company > div > *:hover {
   outline: 15px solid rgb(255, 255, 255, 0.5);
-  outline-offset: -15px;
+  
+
 }
 /*#endregion review*****/
 
