@@ -470,7 +470,7 @@ header a:hover:not(.button-generic) {
   margin-bottom: 70px;
 }
 
-#faq:last-child {
+#faq details:last-child {
   border-bottom: 1px solid black;
 }
 
