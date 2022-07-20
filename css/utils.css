@@ -57,6 +57,9 @@
 }
 
 /*#region margin size*****/
+.mt {
+  margin-top: 5%;
+}
 .mt-1 {
   margin-top: 10%;
 }
@@ -177,5 +180,10 @@
 
 .gap {
   column-gap: 5px;
+}
+
+
+.text-center {
+  text-align: center;
 }
 /*#endregion UTILITIES */

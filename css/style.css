@@ -395,9 +395,13 @@ header a:hover:not(.button-generic) {
 #review .left-company > div > *:hover,
 #review .right-company > div > *:hover {
   outline: 15px solid rgb(255, 255, 255, 0.5);
-  
-
 }
+
+#review .left-company>div > *:hover , .marked {
+  background-color: blue;
+}
+
+
 /*#endregion review*****/
 
 /*#region bigtext2*****/
