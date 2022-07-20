@@ -9,11 +9,9 @@ html,
 body {
   overflow-x: hidden;
   width: 100%;
-  /* You may also want to try adding:*/
   margin: 0;
   padding: 0;
 }
-
 
 a {
   color: inherit;
@@ -48,7 +46,7 @@ a:hover {
 /*#endregion general*****/
 
 main {
-  margin-top: 80px
+  margin-top: 80px;
 }
 /*#region Header*****/
 
@@ -73,7 +71,7 @@ header img {
 header a {
   display: block;
 
-  margin: clamp(0.2rem, 1vw, 1rem);;
+  margin: clamp(0.2rem, 1vw, 1rem);
 }
 header a:not(.button-generic) {
   line-height: 80px;
@@ -228,12 +226,12 @@ header a:hover:not(.button-generic) {
   margin: 3rem 0px;
 }
 
-#pricing .modality-button p a{
+#pricing .modality-button p a {
   color: var(--blue-button-color);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
-#pricing .modality-button p a:hover{
+#pricing .modality-button p a:hover {
   color: blue;
   text-decoration: none;
 }
@@ -242,8 +240,9 @@ header a:hover:not(.button-generic) {
   padding: 15px 25px;
   text-align: center;
 }
-.checked, .notchecked {
-  line-height:30px
+.checked,
+.notchecked {
+  line-height: 30px;
 }
 
 #pricing .checked::before {
@@ -252,7 +251,7 @@ header a:hover:not(.button-generic) {
   color: var(--blue-button-color);
   font-size: 1.5rem;
   margin-right: 0.5rem;
-  line-height:  32px;
+  line-height: 32px;
 }
 
 #pricing .checked::after,
@@ -266,7 +265,7 @@ header a:hover:not(.button-generic) {
   color: rgb(206, 0, 0);
   font-size: 1.5rem;
   margin-right: 0.5rem;
-  line-height:  32px;
+  line-height: 32px;
 }
 
 #pricing .modality-main.long h3 {
@@ -503,7 +502,7 @@ footer hr {
 }
 
 footer > :last-child {
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 /*#endregion footer*****/
 
@@ -517,6 +516,7 @@ body {
     max-width: 80% !important;
   }
 
+  /*#region header*****/
   header {
     width: 100% !important;
     padding: 0 !important;
@@ -529,16 +529,17 @@ body {
     width: 100% !important;
     justify-content: space-between !important;
   }
+  /*#endregion header*****/
 
-  #jumbo h1{
+  /*#region jumbo*****/
+  #jumbo h1 {
     text-align: center;
     font-size: 3rem;
   }
 
-  #jumbo p{
+  #jumbo p {
     text-align: center;
   }
-
 
   #jumbo-image {
     display: none;
@@ -559,6 +560,9 @@ body {
   #jumbo .button-generic {
     align-self: center;
   }
+  /*#endregion jumbo*****/
+
+  /*#region pricing*****/
   .colWrapper > div {
     flex-wrap: wrap;
   }
@@ -570,7 +574,9 @@ body {
   #pricing h2 {
     font-size: 1.7rem;
   }
+  /*#endregion pricing*****/
 
+  /*#region partner*****/
   #partner {
     flex-wrap: wrap;
   }
@@ -585,6 +591,9 @@ body {
   #partner .col.col-3.flex-center > a {
     margin-top: 1rem;
   }
+  /*#endregion partner*****/
+
+  /*#region floating card*****/
   #floatingCards > div {
     justify-content: center;
   }
@@ -597,12 +606,15 @@ body {
     text-align: center;
   }
 
-  #floatingCards h1
-  {
+  #floatingCards h1 {
     text-align: center;
     font-size: 2rem;
   }
+  /*#endregion floating card*****/
 
+  /*#region REVIEW*****/
+
+  /*#region bigtext1*****/
   #bigtext1 h2 {
     font-size: 1.7rem;
     text-align: center;
@@ -610,13 +622,31 @@ body {
   #bigtext1 a {
     text-align: center;
   }
-  #bigtext2  {
+  /*#endregion bigtext1*****/
+
+  #review .marked {
+    display: none;
+  }
+  #review > div > div {
+    width: 100% !important;
+    height: 100% !important;
+  }
+ #review .company {
+    height: calc(100vw / 2) !important;
+  }
+  /*#region bigtext2*****/
+  #bigtext2 {
     padding: 80px 20px;
   }
   #bigtext2 h2 {
     font-size: 1.7rem;
     text-align: center;
   }
+  /*#endregion bigtext2*****/
+
+  /*#endregion REVIEW*****/
+
+  /*#region faq*****/
   #faq h2 {
     text-align: center;
   }
@@ -626,20 +656,7 @@ body {
   #faq details:not([open]) {
     height: 10rem;
   }
+  /*#endregion faq*****/
 
-  #review .marked {
-    display: none
-  }
-  #review > div > div {
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-
-  .company {
-    height: calc(100vw / 2) !important;
-  }
-
-
-
+ 
 }
