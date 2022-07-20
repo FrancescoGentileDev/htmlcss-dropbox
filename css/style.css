@@ -327,12 +327,12 @@ header a:hover:not(.button-generic) {
 
 .company {
   width: calc(100vw / 6);
-  height: calc(100vw / 6);
+  min-height: calc(100vw / 6);
   background-color: #61082b;
 }
 #review .marked {
   background-color: #f5f5f5;
-  height: calc((100vw / 6) * 2);
+  min-height: calc((100vw / 6) * 2);
   padding: 0.5rem 2rem;
 }
 
@@ -510,153 +510,153 @@ html,
 body {
   scroll-behavior: smooth !important;
 }
-
-@media (max-width: 780px) {
+@media (max-width: 680px) {
   .container {
-    max-width: 80% !important;
-  }
-
-  /*#region header*****/
-  header {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-  header > div > div:first-child > :not(img) {
-    display: none;
-    padding: 0 !important;
-  }
-  header > div {
-    width: 100% !important;
-    justify-content: space-between !important;
-  }
-  /*#endregion header*****/
-
-  /*#region jumbo*****/
-  #jumbo h1 {
-    text-align: center;
-    font-size: 3rem;
-  }
-
-  #jumbo p {
-    text-align: center;
-  }
-
-  #jumbo-image {
-    display: none;
-  }
-
-  #jumbo > div {
-    max-width: 80% !important;
-  }
-
-  #jumbo .subtitles {
-    width: 80% !important;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-  }
-  #jumbo .freccia {
-    display: none;
-  }
-  #jumbo .button-generic {
-    align-self: center;
-  }
-  /*#endregion jumbo*****/
-
-  /*#region pricing*****/
-  .colWrapper > div {
-    flex-wrap: wrap;
-  }
-
-  .modality.col {
-    margin-top: 2rem;
-  }
-
-  #pricing h2 {
-    font-size: 1.7rem;
-  }
-  /*#endregion pricing*****/
-
-  /*#region partner*****/
-  #partner {
-    flex-wrap: wrap;
-  }
-  #partner .col-7 {
-    width: 100% !important;
-  }
-
-  #partner .col-3 {
-    margin-top: 2rem;
-    width: 100% !important;
-  }
-  #partner .col.col-3.flex-center > a {
-    margin-top: 1rem;
-  }
-  /*#endregion partner*****/
-
-  /*#region floating card*****/
-  #floatingCards > div {
-    justify-content: center;
-  }
-  #floatingCards .card {
-    width: 100%;
-    margin-top: 3rem;
-  }
-  #floatingCards .card-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  #floatingCards h1 {
-    text-align: center;
-    font-size: 2rem;
-  }
-  /*#endregion floating card*****/
-
-  /*#region REVIEW*****/
-
-  /*#region bigtext1*****/
-  #bigtext1 h2 {
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  #bigtext1 a {
-    text-align: center;
-  }
-  /*#endregion bigtext1*****/
-
-  #review .marked {
-    display: none;
-  }
-  #review > div > div {
-    width: 100% !important;
-    height: 100% !important;
-  }
- #review .company {
-    height: calc(100vw / 2) !important;
-  }
-  /*#region bigtext2*****/
-  #bigtext2 {
-    padding: 80px 20px;
-  }
-  #bigtext2 h2 {
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  /*#endregion bigtext2*****/
-
-  /*#endregion REVIEW*****/
-
-  /*#region faq*****/
-  #faq h2 {
-    text-align: center;
-  }
-  #faq details[open] {
-    height: 360px;
-  }
-  #faq details:not([open]) {
-    height: 10rem;
-  }
-  /*#endregion faq*****/
-
+     max-width: 80% !important;
+   }
  
-}
+   /*#region header*****/
+   header {
+     width: 100% !important;
+     padding: 0 !important;
+   }
+   header > div > div:first-child > :not(img) {
+     display: none;
+     padding: 0 !important;
+   }
+   header > div {
+     width: 100% !important;
+     justify-content: space-between !important;
+   }
+   /*#endregion header*****/
+ 
+   /*#region jumbo*****/
+   #jumbo h1 {
+     text-align: center;
+     font-size: 3rem;
+   }
+ 
+   #jumbo p {
+     text-align: center;
+   }
+ 
+   #jumbo-image {
+     display: none;
+   }
+ 
+   #jumbo > div {
+     max-width: 80% !important;
+   }
+ 
+   #jumbo .subtitles {
+     width: 80% !important;
+     margin: 0 auto;
+     margin-bottom: 2rem;
+   }
+   #jumbo .freccia {
+     display: none;
+   }
+   #jumbo .button-generic {
+     align-self: center;
+   }
+   /*#endregion jumbo*****/
+ 
+   /*#region pricing*****/
+   .colWrapper > div {
+     flex-wrap: wrap;
+   }
+ 
+   .modality.col {
+     margin-top: 2rem;
+   }
+ 
+   #pricing h2 {
+     font-size: 1.7rem;
+   }
+   /*#endregion pricing*****/
+ 
+   /*#region partner*****/
+   #partner {
+     flex-wrap: wrap;
+   }
+   #partner .col-7 {
+     width: 100% !important;
+   }
+ 
+   #partner .col-3 {
+     margin-top: 2rem;
+     width: 100% !important;
+   }
+   #partner .col.col-3.flex-center > a {
+     margin-top: 1rem;
+   }
+   /*#endregion partner*****/
+ 
+   /*#region floating card*****/
+   #floatingCards > div {
+     justify-content: center;
+   }
+   #floatingCards .card {
+     width: 100%;
+     margin-top: 3rem;
+   }
+   #floatingCards .card-text {
+     width: 100%;
+     text-align: center;
+   }
+ 
+   #floatingCards h1 {
+     text-align: center;
+     font-size: 2rem;
+   }
+   /*#endregion floating card*****/
+ 
+   /*#region REVIEW*****/
+ 
+   /*#region bigtext1*****/
+   #bigtext1 h2 {
+     font-size: 1.7rem;
+     text-align: center;
+   }
+   #bigtext1 a {
+     text-align: center;
+   }
+   /*#endregion bigtext1*****/
+ 
+   #review .marked {
+     display: none;
+   }
+   #review > div > div {
+     width: 100% !important;
+     height: 100% !important;
+   }
+  #review .company {
+     height: calc(100vw / 2) !important;
+   }
+   /*#region bigtext2*****/
+   #bigtext2 {
+     padding: 80px 20px;
+   }
+   #bigtext2 h2 {
+     font-size: 1.7rem;
+     text-align: center;
+   }
+   /*#endregion bigtext2*****/
+ 
+   /*#endregion REVIEW*****/
+ 
+   /*#region faq*****/
+   #faq h2 {
+     text-align: center;
+   }
+   #faq details[open] {
+     height: 360px;
+   }
+   #faq details:not([open]) {
+     height: 10rem;
+   }
+   /*#endregion faq*****/
+ 
+  
+ }
+ 
