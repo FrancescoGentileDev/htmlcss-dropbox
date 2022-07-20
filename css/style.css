@@ -157,7 +157,7 @@ header a:hover:not(.button-generic) {
   margin-top: 50px;
   font-size: 1.2rem;
 }
-#radio2 {
+#radioA {
   margin-left: 1rem;
 }
 
@@ -175,7 +175,7 @@ header a:hover:not(.button-generic) {
 
 /*#region modality*****/
 #pricing .colWrapper {
-  padding-top: 2rem;
+  padding-top: 4.3rem;
 }
 
 #pricing .colWrapper > div {
@@ -227,6 +227,7 @@ header a:hover:not(.button-generic) {
 #pricing .modality-button {
   margin: 3rem 0px;
 }
+
 #pricing .modality-button p a{
   color: var(--blue-button-color);
   text-decoration: underline;
